@@ -39,12 +39,12 @@ function draw() {
   else if(keyDown(UP_ARROW)){
     updateHeight(0,-10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
-    balloon.scale=balloon.scale -0.005;
+   
   }
   else if(keyDown(DOWN_ARROW)){
     updateHeight(0,+10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
-    balloon.scale=balloon.scale+0.005;
+ 
   }
 
   drawSprites();
@@ -63,10 +63,7 @@ function updateHeight(x,y){
 }
 
 function readHeight(data){
-  height = data.val();
-  console.log(height.x);
-  balloon.x = height.x;
-  balloon.y = height.y;
+ 
 }
 
 function showError(){
